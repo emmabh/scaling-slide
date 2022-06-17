@@ -1,0 +1,15 @@
+{
+  "name": "scaling-slide",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^7.0.0",
+    "watchify": "^4.0.0"
+  },
+  "scripts": {
+    "dev": "concurrently --names 'watchify,server' -c 'magenta,blue' 'yarn build:dev' 'yarn start'",
+    "build:dev": "yarn watchify script.js -o bundle.js -v",
+    "start": "npx http-server ."
+  }
+}

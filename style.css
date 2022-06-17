@@ -1,0 +1,50 @@
+body {
+    background-image: url(img/mulch.jpg);
+}
+
+.slide {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -10;
+    overflow: hidden;
+}
+
+.slide__img {
+    position: absolute;
+    height: 40%;
+    width: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+
+    @media screen and (max-width: 600px) {
+        width: 80%;
+        height: auto;
+    }
+}
+
+.horizontal-slider {
+    position: absolute;
+    width: 80%;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, 0) scaleY(2);
+    z-index: 1000;
+}
+
+.vertical-slider {
+    position: absolute;
+    height: 80%;
+    left: 5px;
+    top: 50%;
+    transform: translate(0, -50%) scaleX(2);
+    -webkit-appearance: slider-vertical;
+    -moz-transfrom: rotate(270deg);   
+    z-index: 1000;
+    width: 32px;
+}
