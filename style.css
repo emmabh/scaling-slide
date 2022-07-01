@@ -50,3 +50,16 @@ body {
     z-index: 1000;
     width: 32px;
 }
+
+
+.footer-link {
+    font-family: monospace;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+
+a {
+    color: white;
+}
