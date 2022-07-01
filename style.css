@@ -1,5 +1,7 @@
 body {
     background-image: url(img/mulch.jpg);
+    overscroll-behavior: none;
+    -webkit-overscroll-behavior: none;
 }
 
 .slide {
